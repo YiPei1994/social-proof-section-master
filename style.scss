@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  background-image: url("./images/bg-pattern-top-mobile.svg"),
+    url("./images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+}
+img {
+  max-width: 100%;
+}
+/* colors
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+*/
+.wrapper {
+  padding: 50px 30px;
+}
+.container {
+  padding: 25px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: hsl(300, 43%, 22%);
+    padding-bottom: 20px;
+  }
+  p {
+    color: hsl(303, 10%, 53%);
+    line-height: 1.5rem;
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+.rating {
+  background-color: hsl(300, 24%, 96%);
+  margin: 5px 0;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  .stars {
+    padding: 5px 0;
+  }
+  .text {
+    p {
+      color: hsl(300, 43%, 22%);
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}
+.profi-card {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 50px 30px;
+  .profi-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 30px;
+    img {
+      border-radius: 50%;
+      margin-right: 20px;
+      height: 50px;
+    }
+    .name {
+      line-height: 1.5rem;
+      h2 {
+        font-size: 12px;
+        color: hsl(0, 0%, 100%);
+      }
+      span {
+        color: hsl(333, 80%, 67%);
+      }
+    }
+  }
+  .profi-text {
+    p {
+      color: hsl(0, 0%, 100%);
+      font-weight: 400;
+      line-height: 1.5rem;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 15px;
+  }
+  .wrapper {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .main {
+      width: 40%;
+      text-align: start;
+
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+    }
+    .aside {
+      width: 40%;
+      .rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 15px;
+      }
+      .two {
+        margin-left: 80px;
+      }
+      .three {
+        margin-left: 160px;
+      }
+    }
+    .container-profile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .profi-card {
+        width: 32%;
+      }
+    }
+    .irene {
+      margin-top: 100px;
+    }
+    .Anne {
+      margin-top: 200px;
+    }
+  }
+}
